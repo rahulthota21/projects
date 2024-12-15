@@ -27,7 +27,7 @@ This project uses machine learning to analyze and predict crop yields, recommend
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo-url.git
+    git clone https://github.com/rahulthota21/projects.git
     cd crop-yield-prediction
     ```
 2. Install dependencies:
