@@ -9,9 +9,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-# Load dataset
+# Load dataset function
+@st.cache_data
 def load_data():
-    data = pd.read_csv('Match_Prediction.csv')
+    url = 'https://raw.githubusercontent.com/rahulthota21/ProjectVault/main/Cricket%20Match%20Outcome%20Predictor/Match_Prediction.csv'
+    data = pd.read_csv(url)
     return data
 
 # Streamlit App
